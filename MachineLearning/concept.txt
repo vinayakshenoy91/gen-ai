@@ -1,0 +1,35 @@
+Unsupervised learning:
+-----------------------
+- Uncovering hidden patterns from unlabellled data 
+Ex: Customer segmentation - grouping customers into distinct categories (clustering)
+- Classification problems
+
+Classifying labels of unseen data:
+1) Build a model
+2) Model learns from the labeled data we pass to it
+3) Pass unlabeled data to the model as input
+4) Model predicts the labels of the unseen data
+
+Supervised learning:
+--------------------
+- The predicted values are known
+Ex: Predicting data, given the features
+
+1) Classification: Target variables consists of categories
+- Binary classification
+2) Regression: Target variables is continuous
+Feature = predictor variable = independent variable
+Target variable = dependent variable = response variable
+
+Things to take care wrto supervised learning:
+- No missing values
+- Data in numeric format
+- Data stored in pandas DF or NumPy array
+- Perform Exploratory Data Analysis (EDA) first
+
+Algo:
+----
+1) k-nearest neighbours:
+Predict the label of a data point by
+- Looking at the k closest labeled data points
+- Taking a majority vote

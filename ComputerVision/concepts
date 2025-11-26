@@ -1,0 +1,7 @@
+- Branch of AI where software interprets visual input
+- Azure AI Vision service to implement multiple computer vision scenarios, including:
+
+Image analysis
+Optical character recognition (OCR)
+Face detection and analysis
+Video analysis

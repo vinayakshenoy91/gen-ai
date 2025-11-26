@@ -1,0 +1,51 @@
+Ollama:
+-------
+- Run LLMS in local
+- Local LLMs provide a lot of security
+- Ease of use
+- Cost effeciency
+- Latency reduction
+- Customize models
+
+Features:
+--------
+- Able to witch between models
+- Unified interface
+- Extensibility
+- performance optimisation
+
+
+
+
+LLM Working:
+- LLMs generate list of token candidates and each candidate has probability associated to it.
+- Model weights/params -> describe connections between nodes in NN.
+They define which output will be generated for a given input.
+
+Why gets released as open source?
+- Weights of the model are publicly released under a license. 
+Result of the training process that is open. These are open weight LLMs.
+- Ex: Meta's Llama model, Google Gemma model, Deepseek model, Mistral models
+- Find these models in Hugging Face
+- Options for running models locally: Llama.cpp, LM studio, Ollama.
+Ollama and LM studio are wrappers around Llama.cpp
+
+
+Rating LLMs: Chatbot Arena LLM leaderboard.
+
+Model info:
+-----------
+- Architecture: llama
+- parameters: 3.2B [Internal weights and biases that the model learns during training]
+They determine how mode processes input data and generate output.
+- context length: - Max number of tokens model can process in a single input
+- embedding length: The size of vector representation for each token in the input text.
+3072 means 3072 dimensiosn in the embedding space. higher dimensional embeddings can capture more nuanced
+meanings and relationship between words.
+- Quantization: Q4_K_M -> Technique used to reduce the size of NN model by reducing precision of its weight.
+Indicates that models weights are quantized to 4 bits.
+
+Model parameters to consider are:
+---------------------------------
+- Disk size - Even if you have disk size, there may not be enough computational resource
+- Computational resources

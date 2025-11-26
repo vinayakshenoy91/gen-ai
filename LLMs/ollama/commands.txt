@@ -1,0 +1,5 @@
+- ollama run llama3.2
+- ollama stop llama3.2
+- ollama ps
+- ollama ls
+- /help, /show

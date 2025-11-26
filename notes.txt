@@ -1,0 +1,125 @@
+- Gen AI -> Subset of deep learning
+- Models designed to generate new content based on the input that it receives
+or the data it was trained on
+- generative AI refers to a class of artificial intelligence systems designed to generate new content.
+- generating coherent and contextually appropriate responses
+- generative AI is about creating new content that mirrors the patterns found in its training data
+
+Traditional ML : 
+- Recognises pattern in input data & Then makes predictions
+
+Gen AI:
+- Completes the input pattern
+
+High level working of genai:
+To grasp how generative systems work at a high level, imagine the process as a conversation with 
+a knowledgeable friend. When you ask a question or provide a prompt, the system first “reads” 
+your words and interprets their meaning. It does so by analyzing vast amounts of text it has 
+encountered during training, identifying patterns and relationships between words and ideas. 
+Then, using these patterns, it “thinks” of a response that is most likely to be relevant and 
+coherent. Finally, it “speaks” its answer by generating text that aligns with the context and 
+style of your input.
+
+
+Foundation model:
+- We must rely on foundational model to generate data
+- Foundational models are trained on a wide variety of input data
+- Cost tens of millions of dollar to train a model
+
+
+
+Models of Gen AI:
+
+- LLMs -> Text generation, Code generation and Chatbots
+- VAEs -> Data compression and synthetic data generation
+- GANs (variation auto encoders) -> Art creation, image generation and deep fakes
+
+Embeddings:
+- Attaempt to capture meaning by representing properties of the words
+- Embeddings can have many properties to represent the meaning of a word.
+- Since the size of embeddings is fixed, their properties are chosen to create 
+a mental representation of the word.
+- Helps measure semantic similarity between words
+- Using various distance metrics, we can judge how close one word is to another.
+
+
+Attention:
+-----------
+- Allows model to focus on parts of the input sequence that are relevent to one another
+and amplify their signals.
+- It selectively determines which words are most important in a given sentence.
+- Words with similar meanings have high attention weights.
+- Compared to word2vec, this architecture allows for representing the sequential nature '
+of text and the context in which it appears by “attending” to the entire sentence. 
+
+
+Transformer:
+------------
+- It is a network architecture
+-  Compared to the recurrence network, the Transformer could be trained in parallel, 
+which tremendously sped up training.
+- self-attention can attend to different positions within a single sequence, 
+thereby more easily and accurately representing the input sequence.
+Instead of processing one token at a time, it can be used to look at the entire sequence in one go.
+- the self-attention layer in the decoder masks future positions so it only attends to 
+earlier positions to prevent leaking information when generating the output.
+- The original Transformer model is an encoder-decoder architecture that serves translation 
+tasks well but cannot easily be used for other tasks, like text classification.
+
+
+BERT(Bidirectional Encoder Representations from Transformers):
+---------------------------------------------------------------
+- Training these encoder stacks can be a difficult task that BERT approaches by adopting a technique called 
+masked language modeling 
+- this method masks a part of the input for the model to predict. This prediction task is difficult but 
+allows BERT to create more accurate (intermediate) representations of the input.
+- BERT-like models are commonly used for transfer learning, which involves first pretraining 
+it for language modeling and then fine-tuning it for a specific task. For instance, 
+by training BERT on the entirety of Wikipedia, it learns to understand the semantic 
+and contextual nature of text. Then we can use that pretrained 
+model to fine-tune it for a specific task, like text classification.
+
+- A huge benefit of pretrained models is that most of the training is already done for us. 
+Fine-tuning on specific tasks is generally less compute-intensive and requires less data. 
+Moreover, BERT-like models generate embeddings at almost every step in their architecture. 
+This also makes BERT models feature extraction machines without the need to fine-tune 
+them on a specific task.
+
+Encoder only models -> Representation model
+[ Representation models mainly focus on representing language, for instance, by creating embeddings, and typically do not generate text. ]
+
+Decoder only models -> generative Models
+[generative models focus primarily on generating text and typically are not trained to generate embeddings.
+]
+
+
+GPT (Generative Pre-trained Transformer):
+-----------------------------------------
+
+- a decoder-only architecture was proposed in 2018 to target generative tasks.
+This architecture was called a Generative Pre-trained Transformer (GPT) for its generative capabilities
+
+- GPT-1 was trained on a corpus of 7,000 books and Common Crawl, a large dataset of web pages. 
+The resulting model consisted of 117 million parameters. Each parameter is a numerical value 
+that represents the model’s understanding of language.
+
+- These generative decoder-only models, especially the “larger” models, are commonly referred 
+to as large language models (LLMs). 
+
+- the term LLM is not only reserved for generative models (decoder-only) but 
+also representation models (encoder-only).
+
+- Generative LLMs, as sequence-to-sequence machines, take in some text and attempt to autocomplete it. Although a handy feature, their true power shone from being trained as a chatbot. Instead of completing a text, what if they could be trained to answer questions? By fine-tuning these models, we can create instruct or chat models that can follow directions.
+
+- A vital part of these completion models is something called the context length or context window. 
+The context length represents the maximum number of tokens the model can process, 
+
+- A large context window allows entire documents to be passed to the LLM. Note that due 
+to the autoregressive nature of these models, the current context length will increase as new tokens are generated.
+
+- Open source base models are often referred to as foundation models and can be fine-tuned for specific tasks.
+
+
+
+
+

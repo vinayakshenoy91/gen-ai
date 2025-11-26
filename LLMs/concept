@@ -1,0 +1,14 @@
+- Type of AI designed to generate coherent human like text.
+- Trained on large amount if text data 
+- Learns patterns from billiosn of text examples
+- Text in and text out
+
+
+- Creating LLMs, in contrast, typically consists of at least two steps:
+
+Language modeling
+The first step, called pretraining, takes the majority of computation and training time. An LLM is trained on a vast corpus of internet text allowing the model to learn grammar, context, and language patterns. This broad training phase is not yet directed toward specific tasks or applications beyond predicting the next word. The resulting model is often referred to as a foundation model or base model. These models generally do not follow instructions.
+
+
+Fine-tuning
+The second step, fine-tuning or sometimes post-training, involves using the previously trained model and further training it on a narrower task. This allows the LLM to adapt to specific tasks or to exhibit desired behavior. For example, we could fine-tune a base model to perform well on a classification task or to follow instructions. It saves massive amounts of resources because the pretraining phase is quite costly and generally requires data and computing resources that are out of the reach of most people and organizations. For instance, Llama 2 has been trained on a dataset containing 2 trillion tokens.14 Imagine the compute necessary to create that model! In Chapter 12, we will go ove

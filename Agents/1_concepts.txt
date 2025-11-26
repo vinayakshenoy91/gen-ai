@@ -1,0 +1,104 @@
+AI - Field of study and set of tech that enable computer system to perform tasks
+that typically require human intelligence.
+(Decisions, learning, language, reasoning)
+
+AI workflows: 
+- Deterministic sequences of steps. Use AI in one or more steps.
+- High level of control on the flow
+- Useful for tasks with known inputs and outputs
+- Involves some thinking and revision
+- It is a process where a LLM based app executes multiple steps to complete a task
+
+
+Degree of autonomy of agents:
+
+
+AI agents : 
+- System that leverages AI model to interact with its env to achieve a user defined objective.
+It is capable of reasoning, planning, and acting to fulfil tasks
+- Create and execute plans based on pre-defined instruction and tools.
+Use AI for planning and executing partially.
+- AI creates a plan and devs allows it to access the tools to execute the plan.
+- LLMs can just predict tokens
+- Low/moderate level control as you do not know which tools will be used when.
+- Useful for tasks with unknown inputs and outputs
+- Agent is an Ai component that does specific job. It has a role (job that AI agent is designed to perform), 
+goal and a backstory (history and context).It has an LLM attached to it.
+
+AI agent has:
+------------
+1) Brain: Language model
+2) Body: Tools 
+
+
+Multi-agents:
+- Team of AI agents that work together to solve a problem
+Each agent has a role, goal and sometimes tool.
+Ex: Manus, Magnetic one, Agile coder
+Frameowrk used: Langchain/Lang smith, AutoGen, Google ADK, LamaIndex
+
+AI applications:
+- Appications that contains code + LLM
+
+When an AI agent is needed?
+- Complex queries, unstructured data, difficult to maintain rules, adaptive problem solving
+- Agentic solution with tool access
+- Can generate remediation stratagies and update systems
+
+Orchestration layer maintains :
+- Model reasoning and planning
+- Long and short term memory
+- Instructions
+
+
+React framework:
+----------------
+- Reasoning
+- Acting
+
+Multiagent:
+-----------
+- Execute workflows across multiple coordinated agents
+
+Guard rails:
+------------
+
+Things to take care of for real world:
+--------------------------------------
+- Design useful prompts with context
+- Understand agent capabilities and limitations
+- Verify agent outputs
+- Mindful of costs
+- Use AI agents responsibly
+
+Buildign best practices:
+------------------------
+- Design for human intervention. When to handoff
+- Analyse if you event need an agent
+- costs and perf
+- Start simple and iterate
+- Monitor and measure
+
+When use agents?
+-----------------
+- Open end prompts
+- Complex tasks
+- Adaptive
+
+Getting production ready:
+-------------------------
+1) Validate real interactions
+2) Unit and integration testing, Evaluate system prompts
+Subjective evaluation (LLM as judge or human rater)
+3) Guardrails and observability  - Content filter, model or tool failure, fallback
+Logging
+4) Shadow deployments
+5) Deployment strategies - A/B testing, user segmentation, human in loop
+
+Checklist:
+- Handle messy inputs
+- Logs
+- Filters
+- testing
+- Gradual deployment
+- observability

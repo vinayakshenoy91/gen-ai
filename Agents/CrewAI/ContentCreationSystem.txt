@@ -1,0 +1,136 @@
+Orchestrating multi-crew flows
+------------------------------
+This class orchestrates the entire content creation pipeline.
+
+ContentRouterFlow Class Analysis
+Class Overview
+
+ContentRouterFlow is a subclass of Flow[ContentState] that routes content dynamically using events. It shows how CrewAI’s Flow architecture handles keeping track of progress in the flow and assigning work to specific crews.
+Key Decorators & Their Roles
+💾 @persist()
+
+Purpose: Enables automatic state persistence across workflow execution
+Behavior: Saves flow state to SQLite database by default
+Benefits: Workflow recovery, state tracking, and debugging capabilities
+Scope: Applied at class level to persist all method states
+🚀 @start()
+
+Purpose: Marks the workflow entry point
+Function: Collects user input (URL + content type) and initializes state
+Triggers: Automatic when flow begins
+🧭 @router(get_user_input)
+
+Purpose: Creates decision point for workflow routing
+Logic: Returns self.state.content_type to determine next path
+Output: Routes to "blog", "newsletter", or "linkedin" listeners
+👂 @listen("event_name")
+
+Purpose: Creates event listeners for specific triggers
+Behavior: Methods execute when their specified event occurs
+Examples: @listen("blog"), @listen("newsletter"), @listen("linkedin")
+Workflow:
+The workflow starts with @start() on get_user_input().
+The result of get_user_input() is routed by @router() to one of the process_*_content methods based on the content_type.
+Whichever process_*_content method runs (e.g., process_blog_content), it will eventually complete and save the result to the flow's state.
+
+
+from crewai.flow.flow import Flow, listen, router, start
+from crewai.flow.persistence import persist
+from crewai import Crew
+
+# CODE: Create the workflow class
+@persist(verbose=True)
+class ContentRouterFlow(Flow[ContentState]):
+    """
+    A dynamic workflow that routes content creation to specialized crews.
+
+    Flow Overview:
+    1. START: Get user input (URL + content type)
+    2. ROUTE: Direct to appropriate content crew
+    3. PROCESS: Execute specialized content creation
+    4. FINISH: Return the final content
+
+    This flow demonstrates:
+    - Event-driven architecture with decorators
+    - State management across workflow steps
+    - Dynamic routing based on user input
+    - Parallel processing capabilities
+    """
+
+    # CODE: Define the get_user_input with a start decorator
+    @start()
+    def get_user_input(self):
+        """Get URL and desired content type from user"""
+        url = "https://blog.crewai.com/pwc-choses-crewai/"
+        content_type = "newsletter"
+        self.state.url = url
+        self.state.content_type = content_type
+        return "Input collected"
+
+    @router(get_user_input)
+    def route_to_crew(self, previous_result):
+        """Route to appropriate crew based on content type"""
+        return self.state.content_type
+
+    @listen("blog")
+    def process_blog_content(self):
+        """Process content using blog crew"""
+        researcher, writer = create_blog_agents()
+        tasks = create_blog_tasks(researcher, writer, self.state.url)
+        blog_crew = Crew(
+            agents=[researcher, writer],
+            tasks=tasks,
+            verbose=False
+        )
+        result = blog_crew.kickoff()
+        self.state.final_content = result.raw
+        return "Blog content created"
+
+    @listen("newsletter")
+    def process_newsletter_content(self):
+        """Process content using newsletter crew"""
+        researcher, writer = create_newsletter_agents()
+        tasks = create_newsletter_tasks(researcher, writer, self.state.url)
+        newsletter_crew = Crew(
+            agents=[researcher, writer],
+            tasks=tasks,
+            verbose=False
+        )
+        result = newsletter_crew.kickoff()
+        self.state.final_content = result.raw
+        return "Newsletter content created"
+
+    @listen("linkedin")
+    def process_linkedin_content(self):
+        """Process content using LinkedIn crew"""
+        researcher, writer = create_linkedin_agents()
+        tasks = create_linkedin_tasks(researcher, writer, self.state.url)
+        linkedin_crew = Crew(
+            agents=[researcher, writer],
+            tasks=tasks,
+            verbose=False
+        )
+        result = linkedin_crew.kickoff()
+        self.state.final_content = result.raw
+        return "LinkedIn content created"
+
+
+
+//Running the flow: 
+# CODE: Create and run the flow
+flow = ContentRouterFlow()
+result = flow.kickoff()
+
+Now that the run has completed, let's access the final content saved in our state via flow.state.final_content
+
+from IPython.display import display, Markdown
+
+display(Markdown("## 📝 Generated Content"))
+display(Markdown("---"))
+
+content = str(flow.state.final_content)
+display(Markdown(content))
+display(Markdown("## Flow State Summary"))
+display(Markdown(f"URL: {flow.state.url}"))
+display(Markdown(f"Content Type: {flow.state.content_type}"))
+display(Markdown(f"Final Content Length: {len(str(flow.state.final_content))} characters"))
