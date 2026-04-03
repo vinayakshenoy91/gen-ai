@@ -1,0 +1,16 @@
+- Agent to remember the results of each step to ensure that it 
+can continue the task from where it left off
+
+Provide Full Context: To simulate continuity in a conversation, include all relevant messages 
+(both user and assistant responses) in the messages parameter.
+
+Role of Assistant Messages: Adding previous responses as assistant messages allows the model 
+to maintain a coherent conversation and build on earlier exchanges. For an agent, this will 
+allow it to remember what actions, such as API calls, it took in the past.
+
+Memory Management: We can control what the LLM remembers or does not remember by managing what 
+messages go into the conversation. Causing the LLM to forget things can be a powerful tool 
+in some circumstances, such as when we need to break a pattern of poor responses from an Agent.
+
+- Developers must explicitly manage and provide context to ensure the model generates 
+accurate and relevant responses.

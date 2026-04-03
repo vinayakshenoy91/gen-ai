@@ -1,0 +1,34 @@
+- To provide a temporary storage area for raw data before it is transformed and loaded, 
+enabling data quality checks and complex transformations.
+- Centralized repo of integrated data from one or more disparate sources, designed for 
+reporting and data analysis rather than transactional processing.
+- Large collection of business data that an org uses to make decisions. Stores processed data.
+- Process of constructing and using DW is data warehousing
+- Data warehouse is specially designed for data analytics, that involves reading 
+large amounts of data to understand the relationships and trends across the data.
+- This is schema-on-write : Designed prior to DW implementation
+- Batch reporting, BI and visualisations
+- Fast query using high cost storage
+- Structured data for traditional BI and reporting.
+
+Functions performed are:
+- Data extraction
+- Data cleaning
+- Data transformation
+- Data Loading and refreshing
+
+- DW architecture is the method of defining the overall architecture of data comm, processing 
+and presentation for E2E computing within enterprise.
+
+Why staging area?
+- Copy the data from source to staging based on avaiability of source data.
+Source data may be available only for a short time.
+- Perform joins & transformation and store intermediate data from various sources
+- Increases latency between source and DW & increase in space
+
+Data marts:
+----------
+- Small, subject oriented data WH tailored for a specific dept or business function.
+- Data storage system that contains information specific to orgs business unit
+- Small and selected part of the data
+- Analyse dept specific info more effeciently

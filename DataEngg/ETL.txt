@@ -1,0 +1,22 @@
+ETL:
+----    
+- extract, transform (done in staging) and loading
+- Large volumes of raw data from multiple sources, converts it for analysis and loads that data into warehouse
+- Staging area acts as a buffer between the DW and the source data.
+It is used for data clensing and organisation.A big challenge during the data extraction process
+is how your ETL tool handles structured and unstructured data.
+
+Transformation:
+---------------
+- Data cleaning and org stge is the transformation stage
+- Data from multiple soruces is normalised and converted to a single system format.
+- Methods in transformation: Cleaning, Filtering, Joining, Sorting, splitting, dedup, summarization
+- Data extracted to staging area and transformed data is loaded into DW
+
+ETL tools:
+---------
+- Oracle data integrator
+- Apache airflow
+- Azure data factory
+- SQL server SSIS 
+- Informatica

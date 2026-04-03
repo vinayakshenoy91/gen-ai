@@ -1,0 +1,7 @@
+Flipped Interaction Pattern:
+
+- Agent is made to sit in driver seat
+- It asks us lot of questions to accomplish a task instead of we providing it with all info.
+
+- Models are good at traslating goals to the interface.
+

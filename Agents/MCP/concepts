@@ -1,7 +1,0 @@
-- Universal standard for connecting AI with data. Developed by antropic.
-
-MCP pros:
-- Dynamic tool discovery
-- LLM agnostic
-- Standardised security
-- MCP server displays what tools are available and what they can do.

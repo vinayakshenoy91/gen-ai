@@ -1,0 +1,11 @@
+Library used: sklearn -> train_test-split()
+
+- train_test_split() -> used to split our data into train and test sets
+- Divide data into features(x) and label(y). 
+- Dataframe gets divided into X_train,X_test that are used to train and fit the model.
+- y_train, y_test is used for testing the model.
+- train set > test set
+- test dataset is subset of training dataset that is utilized to give an accurate evaluation
+of a final model fit.
+- validation set -> It is a sample of data from your model's training set that is used to 
+estimate model performance while tuning the model's hyperparameters

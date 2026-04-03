@@ -1,0 +1,15 @@
+Supervised learning: Labelled data
+1) Classification: Yes/No, spam detection, emai filtering
+KNN, Decision trees, Random forest, logistic regression, naive based classifiers.
+XGboost, CAT boost, ADA boost
+2) Regression: Linear relation between input an output
+3) Timeseries forcasting: Similar to regression but time plays a vital role.
+
+
+Unsupervised learning:
+- Learn with unlabelled data. Customer segmentation using list of customers with no label.
+1) Clustering: kmeans clustering, MS, DB scan, PCA/LBA
+
+
+Reinforcement learning:
+- Feedback based learning

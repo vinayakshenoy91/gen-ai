@@ -1,0 +1,43 @@
+Where are the ollama models stored: /Users/in22904867/.ollama/models
+
+ollama list
+
+ollama pull <modelname>
+ollama run <modelname> //This includes pull
+ollama stop <modelname>
+ollama serve
+
+ollama rm <modelname>
+ollama ls
+ollama ps
+
+ollama create <modelname> -f ./Modelfile
+
+/clear
+/bye
+/show info
+
+
+Parameters: 3.2B
+- The internal weights and biases that the model learns during training
+- They determine how the model processes input data and generate output
+
+Context length: 
+- Max number of tokens the model can process in a single input
+
+Embedding length : 3072
+- The size of the vector representation for each token in the input text.
+- 3072 dimensions int he embeddign space
+- Higher dimensional embeddings can capture more nuanced meanings and relationships
+between words
+
+Quantization: Q4_K_M
+
+- Technique used to reduce the size of NN model by reducing the precision of its weight
+- Indicates that the model weights are quantized to 4 bits
+
+llava:7b for model -> caption an image
+
+
+
+

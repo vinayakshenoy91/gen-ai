@@ -1,0 +1,21 @@
+References:
+https://modelcontextprotocol.io/docs/getting-started/intro
+
+- Universal standard for connecting AI with data. 
+- Developed by antropic.
+- Structured secure way to connect with tools and services.
+- Interface between AI models and external tools
+- Reduces glue code. Scales across multiple models and systems.
+- Gives a boundary on what AI can do.
+
+MCP pros:
+- Dynamic tool discovery
+- LLM agnostic
+- Standardised security
+- MCP server displays what tools are available and what they can do.
+
+
+Installation:
+------------
+uv init
+uv add mcp

@@ -1,0 +1,16 @@
+- Centralised repo that allows you to store structured and unstructured data at scale.
+- W/o structuring data , run analytics from dashboard, visualisation, big data processing,
+real time analytics and ML to guide better decisions.
+- Schema on read : Written at the time of analysis
+- Fast query using low cost storage
+- ML, predictive analytics, data discovery
+- Datalake for raw storage and advanced analytics
+
+
+- import any amount of data
+- Secure store
+- Access data with choice of analytics tools and frameworks.
+
+- Imporved customer interactions
+- Improve R&D innovation choices
+- Increases operational efficiencies

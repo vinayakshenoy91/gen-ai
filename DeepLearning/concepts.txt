@@ -1,0 +1,4 @@
+- Subfield of ML concerned with algos inspired by the structure and 
+function of a brain called ANN
+- Neuron is a basic building block
+- Activation function: Should we activate that node or not

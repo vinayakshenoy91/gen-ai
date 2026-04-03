@@ -1,0 +1,44 @@
+- Independent variables or predictors are the input variables used to make preductions or 
+classify data in a ML model.
+- They can be numerical or categorical and represent different aspects of data.
+- Ex in house pricing, number of bedrooms, squarefoot, location, etc
+
+Feature scaling: It is used to get an unbiased model
+---------------
+- When we deal with independent variable or features that are diff from each other
+in terms of range of values or units of features, then we have to normalize/standardize
+the data so that diff in range of values doesn't affect the outcome of data.
+
+- Rescale the values present in the features. We convert scale of diff measurements
+into a single scale. It standardize the whole dataset in one range.
+
+- Features priority by algo should not depend on exact number.
+
+Two methods:
+
+1) Standardization (Standard scaler): For each feature, mean is 0 and Standard deviation is 1.
+this bring all feature to same magnitude.Helps scale down feature based on standard normal distribution.
+Library used: sklearn.standard_scaler
+
+2) Normalisation (min-max scaler): Helps scale down feature between 0 and 1.
+Library used: sklearn.minmax scaler
+
+
+Feature encoding:
+-----------------
+- Transform categorical data to numerical data
+
+1) Label encoding: Should always be used for target variables.
+Transform categorical data to numerical data by assigning a numerical value to each of the categories
+Mostly used for Y variables and not X variables as it creates bias.
+
+2) one-hot encoding:
+This technique is used when independent variables are nominal. It creates k different columns each for a 
+category and replaces one column with 1 rest of the column is 0
+
+0 -> absence
+1 -> presence 
+
+In dummy encoding, one of the categorical column will be dropped as it is understood/implied.
+(N-1) dummy columns
+Library used: sklearn.one_hot_encoder, pandas.getDummies(drop_first, drop_last)

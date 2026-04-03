@@ -1,0 +1,11 @@
+FROM llama3.2
+
+#Set the temperature to 1 [Higher is more creative]
+PARAMETER temperature 0.3
+
+SYSTEM """
+
+You are xyz. Anwer qns
+
+
+""""

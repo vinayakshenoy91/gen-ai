@@ -1,6 +1,22 @@
+Agentic AI:
+-----------
+- Autonomously execute task
+
+
 AI - Field of study and set of tech that enable computer system to perform tasks
 that typically require human intelligence.
 (Decisions, learning, language, reasoning)
+
+- Agentic AI has the agency over what is happening.
+- It responds and adapts
+- Interface existing systems with AI systems that are adaptive and not rigid as they used to
+
+
+Task is agentic ai suited if:
+- If there is a clear process to follow. Check for sequence of events or queries.
+- Standard procedure to follow
+- Text assets only
+
 
 AI workflows: 
 - Deterministic sequences of steps. Use AI in one or more steps.
@@ -9,6 +25,8 @@ AI workflows:
 - Involves some thinking and revision
 - It is a process where a LLM based app executes multiple steps to complete a task
 
+- Agentic AI workflow is a process where an LLM based app executes multiple steps to complete a task
+- Degree of agentic workflows can vary between more autonomous to less autonomous
 
 Degree of autonomy of agents:
 

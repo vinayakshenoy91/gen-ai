@@ -1,0 +1,26 @@
+LiteLLM : https://github.com/BerriAI/litellm
+
+y using a single interface, we can easily switch between different models without changing our code, 
+making it perfect for testing different LLMs or having fallback options in production. This will 
+also allow us to make our agent reusable across LLMs — although we may need to do some 
+prompt engineering to make it work with a new LLM.
+
+Open AI LLMs -> https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key
+
+
+Code block:
+
+# Important!!!
+#
+# <---- Set your 'OPENAI_API_KEY' as a secret over there with the "key" icon
+#
+#
+import os
+from google.colab import userdata
+api_key = userdata.get('OPENAI_API_KEY')
+os.environ['OPENAI_API_KEY'] = api_key
+
+Try out key: https://colab.research.google.com/drive/10USwjwaJ-1J-I_2igKIbJ-GdMDWlHKRU?usp=sharing
+
+
+Note: Google Colab provides the easiest way to run this agent code without setting up a local environment.

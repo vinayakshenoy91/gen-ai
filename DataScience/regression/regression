@@ -1,0 +1,12 @@
+- Goal is to predict a numeric quantifiable value
+- Type of predictive modelling techniquewhich investigates relationship between dependent and 
+independent variable.Used in forecasting, timeseries modelling, and finding the causal effect
+relationship between variables.
+
+Types of regression algo:
+-------------------------
+1) Linear regression
+2) Lasso regression
+3) polynomial regression
+4) Stepwise regression
+5) Ridge regression

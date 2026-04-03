@@ -1,0 +1,60 @@
+AI product types: (AI must be integrated to a experience to add value)
+-----------------
+0-1 -> pplying an emerging technology or model to a new product to create an experience 
+that did not exist before. 
+- develop the product, but also to find a market fit for the novel technology.
+
+1-to-n ->  enhancing, expanding, or adapting an existing product. 
+- you may have a better understanding of the product–market fit. 
+You can think of 1-to-n products as derivative products or feature upgrades.
+
+AIPDL ( AI product dev lifecycle)
+
+1) Ideation:
+
+Step 1: Adopt an innovation-first mindset
+
+- identify the AI features that would benefit your target user segment
+- make and test hypotheses and to start again from scratch if you can’t validate them.
+
+- An AI PM’s role isn’t just to generate new ideas and recognize opportunities 
+for innovation—places where AI is uniquely positioned to have a significant impact.
+
+- the aim of the ideation phase is to identify potential use cases in untapped markets 
+and address the pain points of a particular user segment. This requires brainstorming, 
+extensive market research, hypothesizing, and collaboration with AI researchers. Collaboration 
+is critical, as hypotheses are rigorously tested through prototypes and market fit experiments. 
+Each experiment’s feedback cycle is geared 
+toward refining the AI solution to fill market gaps and respond to user needs. 
+
+- Regardless of the product type, ideas should always be user-centric. 
+The ideation stage involves identifying the target user and understanding their use cases, 
+needs, and pain points.
+
+Step 2: Understand AI-powered features and their capabilities
+
+Step 3: Brainstorm with your team
+
+Step 4: Know your customers by using the RICE framework
+
+
+
+2) Opportunity:
+
+
+3) Developing a concept/prototype
+
+
+4) Testing and analysis
+
+
+5) Rollout
+
+- Marketing plan should define clear target user segments, communicate strong messaging, 
+and select the optimal channels to promote the product, such as television, 
+print, and social media
+
+- Releasing previews and offering early access is a great way to create a buzz 
+and build anticipation.
+
+

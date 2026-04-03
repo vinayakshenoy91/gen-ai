@@ -1,3 +1,9 @@
+- Machine learning is a subset of data science that deals with predictive modeling.
+- Machine learning works by identifying relationships between data values that describe 
+the characteristics of something (its features, such as the height and color of a plant) and 
+the value we want to predict (the label, such as the species of plant). These relationships are built 
+into a model through a training process.
+
 Unsupervised learning:
 -----------------------
 - Uncovering hidden patterns from unlabellled data 
