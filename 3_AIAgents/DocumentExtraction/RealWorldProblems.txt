@@ -1,0 +1,4 @@
+Keyword search fails:
+- Semantic mismatch: "Total revenue" vs "Net sales"
+- Context blindness: What matters if there are multiple mentions of same word.
+- Fragmentation: Answer spans multiple pages.

@@ -1,0 +1,27 @@
+- What and why is in spec and it is decoupled from implementation How.
+- Spec is a universal contract.
+- Convert intentions to specifications.
+- spec.md -> Code
+
+Benefits:
+- Control code with small changes to spec.
+- Eliminate context decay problem
+- Improve intent fidelity
+
+SDD workflow include:
+a) Constitution includes:
+- Mission  - Explains why?, vision, audience, scope, etc
+- Tech stack
+- Roadmap
+
+b) Feature phase:
+- specification
+- implementation
+- validation
+
+Job moves to:
+- design
+- supervise
+- review
+- accept
+- or ask for change.

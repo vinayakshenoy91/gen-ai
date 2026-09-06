@@ -1,0 +1,6 @@
+Evaluating Agentic AI:
+-----------------------
+1) Can evaluate using code (objective evals, Ex: number of occurance of competitor names)
+or LLM as a judge.
+2) Two types: E2E and component level
+3) Examine traces to perform error analysis

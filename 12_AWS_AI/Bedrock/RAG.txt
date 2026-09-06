@@ -1,0 +1,36 @@
+- RAG Called knowledgebase in bedrock.
+
+Pros:
+-----
+- Faster and cheaper way to incorporate new info into GenAI
+- Leverage semantic search using vector store.
+- Prevent hallucination
+- AI search
+
+Cons:
+-----
+- OverComplicated search engine
+- Very sensitive to the prompt template you use to incorporate your data
+- Non-deterministic
+- Still hallucinate
+- Sensitive to relevency of info
+
+DB choice:
+----------
+Graph DB ( neo4j) - Product recommendation or relationship between items
+Opensearch or something similar for traditional text search
+Most RAG example use Vector DB. Elasticsearch/Opensearch can function as vector DB.
+
+Embedding: Big vector associated with your data.
+It is a point in multi-dimensional space.They are computed in such a way that items that are similar 
+to each other are close to each other in that space.Embedding vectors are done via embedding foundation
+models like Titan.
+- Store data alongside computed embedding vectors.
+
+Retrieval looks like:
+- Compute an embedding vector for the thing you want to search for 
+- Query for top items close to that vector
+- Get top N similar things. (KNN)
+- You can control chunking of your data.    
+
+=> VVIP: How we store and exteact data makes a big difference

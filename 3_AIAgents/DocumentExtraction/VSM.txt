@@ -1,0 +1,6 @@
+Visual language model:
+----------------------
+- VLMs - unitifed architecture connecting visual concept to lingustic meaning
+- Process image and text simultaneously creating unified understanding across modalities.
+- Machines understand context, relationships and intent within visual scenes.
+

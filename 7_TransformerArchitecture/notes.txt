@@ -1,0 +1,19 @@
+Rather than processing sequences step by step, it utilized self-attention 
+to examine all parts of a sequence simultaneously. This allowed it to weigh and 
+relate distant elements flexibly, leading to far better modeling of complex relationships. 
+Just as importantly, it enabled highly parallelized training, accelerating progress across the field.
+
+capacity for generalization and abstraction. With the right scale and training, transformers could learn not just to generate language but to reason about it, to follow instructions, to solve logic puzzles, to write code, to answer open-ended questions. They didn’t just predict the next word in a sentence; they learned patterns of behavior, causality, dialogue, and intent.
+
+
+
+Transformers are uniquely suited to all of these:
+Their attention mechanisms support multi-hop reasoning by flexibly connecting facts.
+
+Their architecture can be extended with memory modules—whether long context windows or external memory systems—to hold knowledge over time.
+
+And with the right prompting strategies (like chain of thought or ReAct, which we will discuss more in the upcoming chapters), transformers can simulate planning, self-reflection, and iterative decision-making.
+
+
+Put simply, the transformer turned static sequence models into dynamic cognitive engines. It gave AI systems the expressive power to simulate a wide range of thought processes—making them the ideal foundation for building agents that can operate autonomously in complex environments.
+

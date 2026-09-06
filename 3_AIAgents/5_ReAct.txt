@@ -1,0 +1,2 @@
+- ReAct -> Reason + Act
+- Action [tool call], Observation[the response from tool], Thought [next steps]

@@ -1,7 +1,19 @@
 Agentic AI:
 -----------
-- Autonomously execute task
+- AI agent is an autonomous system that can percieve its env, reason about 
+ goals and take action with limited supervision. It can handle unexpected scenarios.
 
+- Autonomously execute task
+- Agentic AI workflow is a process where an LLM-based app executes 
+multiple steps to complete a task.
+- Agentic workflows enable iterative improvement through reflection and revision, 
+often delivering gains larger than upgrading to newer model generations.
+- Modularity in agentic workflow helps in: Replace one RAG system with a different document 
+retrieval system without modifying other parts of the workflow.
+
+- disciplined evaluation and error analysis process important when developing agentic workflows
+helps in enabling developers to identify specific problems and make targeted improvements 
+through iterative refinement.
 
 AI - Field of study and set of tech that enable computer system to perform tasks
 that typically require human intelligence.
@@ -29,6 +41,13 @@ AI workflows:
 - Degree of agentic workflows can vary between more autonomous to less autonomous
 
 Degree of autonomy of agents:
+Less autonomous:
+1) All steps predetermined
+2) All tools use hard coded
+3) Autonomy is in text generation
+
+Highly autonomous
+Semi-autonomous agents
 
 
 AI agents : 
@@ -112,6 +131,7 @@ Subjective evaluation (LLM as judge or human rater)
 Logging
 4) Shadow deployments
 5) Deployment strategies - A/B testing, user segmentation, human in loop
+
 
 Checklist:
 - Handle messy inputs

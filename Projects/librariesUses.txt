@@ -1,0 +1,5 @@
+- re: Python’s regular expression module, 
+which you’ll use to extract snippets of code or structured text from the LLM’s output.
+
+- json:Provides functions to read and write JSON, useful for handling structured responses returned by the LLM.
+

@@ -1,0 +1,19 @@
+- Financial model is structured representation of real-world financial situation
+- Orgnaises financial data to project future performance.
+- Evaluate investments and understand potential risks
+- Blueprint for financial decision making
+
+Components of financial model:
+- Inputs: Key data points (historical sales, expenses, interest rates, mkt trends)
+- Calcuations: Formulas applied to project growth 
+- Outputs: Insights and projections,incl financial statements, scenario analysis
+and key metrics.
+
+Steps for effective financial model:
+- Define the model: ( sales projection, investment eval)
+- Orgnaise data: Arrange inputs based on purpose (historical sales for cash flow forecasting)
+- Define assumptions(sales growth, inflation, interest rates)
+- Build calculations: Develop formulas using logical assumptions to link inputs and outputs.
+- Test and refine: Validate model accuracy and test scenarios for various assumptions. Scenario analysis
+- Validation and refinement: Test against actual results or scenarios to identify errors and adjust.
+

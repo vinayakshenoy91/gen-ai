@@ -1,0 +1,41 @@
+Manifesto for Responsible Agentic AI Engineering
+1.	
+Safety first, always
+
+If an agent can act in the world, its first responsibility is to avoid harm. As engineers, we must bake in constraints, safeguards, and guardrails so the system errs on the side of caution.
+
+ 
+2.	
+Transparency over mystery
+
+A black box agent may impress in a demo, but it won’t earn trust in the real world. Our duty is to make its reasoning visible—through logs, explanations, or human-readable traces.
+
+ 
+3.	
+Bias is a design flaw
+
+Every dataset carries history, and every model can inherit prejudice. Spotting, testing, and mitigating bias is not optional; it’s a core engineering task.
+
+ 
+4.	
+One goal, one owner
+
+An agent without clarity of purpose is a liability. Each system should have a well-defined subgoal it is responsible for—no more, no less.
+
+ 
+5.	
+Humans stay in the loop
+
+Full autonomy is tempting, but responsible design means knowing where humans must step in—whether at decision points, reviews, or oversight dashboards.
+
+ 
+6.	
+Resilience over perfection
+
+Agentic systems will make mistakes. What matters is designing for recovery—graceful fallbacks, error handling, and safe exit ramps when things go wrong.
+
+ 
+7.	
+Build for trust, not just scale
+
+A successful agent doesn’t just execute tasks at speed; it earns the confidence of those who rely on it. That means predictability, consistency, and respect for user intent.

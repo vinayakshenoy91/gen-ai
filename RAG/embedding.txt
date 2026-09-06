@@ -1,0 +1,30 @@
+1) Chunk level embedding:
+-------------------------
+- preceise retrieval 
+- Exact table/para
+- Less noise in context
+- Better for focussed qns
+
+Cons: More complexity  and higher costs
+
+
+2)Page level embedding:
+------------------------
+- Simple
+- Fewer embeddings
+- Faster DB build
+- Good for broad qns
+
+Cons - less precise, no localization
+
+
+metadata:
+---------
+- Allows to filter before searching or enriching
+- Incases of document storage, store chunk type, page num and coordinates of bounding box 
+as metadata.
+
+
+ChromaDb uses:
+--------------
+- HNSW index under the hood

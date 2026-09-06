@@ -1,4 +1,32 @@
 Attention is all you need
 Richard Rumelt’s Good Strategy, Bad Strategy.
 Covington, Paul, Jay Adams, and Emre Sargin. “Deep neural networks for youtube recommendations.”
+Self-refine: Iterative refinement with self feedback
 
+[1]	A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin, “Attention is all you need,” in Advances in Neural Information Processing Systems (NeurIPS), 2017, pp. 5998–6008.
+[2]	R. S. Sutton and A. G. Barto, Reinforcement Learning: An Introduction, 2nd ed. Cambridge, MA, USA: MIT Press, 2018.
+[3]	I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning. Cambridge, MA, USA: MIT Press, 2016.
+[4]	T. B. Brown, B. Mann, N. Ryder, et al., “Language models are few-shot learners,” in Advances in Neural Information Processing Systems (NeurIPS), 2020, vol. 33, pp. 1877–1901.
+[5]	J. Yao, D. Yang, and N. C. Cambria, “ReAct: Synergizing reasoning and acting in language models,” arXiv:2210.03629, 2022.
+[6]	Meta AI, “Toolformer: Language models can teach themselves to use tools,” arXiv:2302.04761, 2023.
+[7]	AI21 Labs, “MRKL Systems: Modular Reasoning, Knowledge, and Language,” 2022. [Online]. Available: https://​www.​ai21.​com/​blog/​mrkl-system
+
+[1]	T. B. Brown, B. Mann, N. Ryder, et al., “Language models are few-shot learners,” in Advances in Neural Information Processing Systems (NeurIPS), 2020, vol. 33, pp. 1877–1901.
+[2]	J. Wei, X. Wang, D. Schuurmans, et al., “Chain-of-thought prompting elicits reasoning in large language models,” arXiv:2201.11903, 2022.
+[3]	S. Yao, J. Zhao, D. Yu, N. Du, I. Shafran, K. Narasimhan, and Y. Cao, “ReAct: Synergizing reasoning and acting in language models,” arXiv:2210.03629, 2022.
+[4]	T. Schick, J. Dwivedi-Yu, R. Dessì, R. Raileanu, M. Lomeli, L. Zettlemoyer, N. Cancedda, and T. Scialom, “Toolformer: Language models can teach themselves to use tools,” arXiv:2302.04761, 2023.
+[5]	OpenAI, “GPT-4 Technical Report,” arXiv:2303.08774, 2023.
+[6]	LangChain, “LangChain documentation,” 2023. [Online]. Available: https://​www.​langchain.​com
+[7]	J. D. Kotra, “CrewAI: Multi-agent orchestration framework,” GitHub repository, 2023. [Online]. Available: https://​github.​com/​joaomdmoura/​crewai
+[8]	J. Rajbhandari, L. Xu, S. Jain, and H. Yang, “LangGraph: Building stateful, multi-actor applications with LLMs,” 2023. [Online]. Available: https://​www.​langchain.​com/​langgraph
+
+[1]	S. Yao, D. Yu, S. Zhao, I. Shafran, T. Griffiths, Y. Cao, and K. Narasimhan, “ReAct: Synergizing reasoning and acting in language models,” in Proc. 11th Int. Conf. on Learning Representations (ICLR), 2023. [Online]. Available: https://​arxiv.​org/​abs/​2210.​03629
+[2]	N. Shinn, F. Cassano, S. Lin, and S. Yao, “Reflexion: Language agents with verbal reinforcement learning,” arXiv preprint arXiv:2303.11366, 2023.
+[3]	T. Schick, J. Dwivedi-Yu, H. Schütze, et al., “Toolformer: Language models can teach themselves to use tools,” arXiv preprint arXiv:2302.04761, 2023.
+[4]	P. Lewis, E. Perez, A. Piktus, et al., “Retrieval-augmented generation for knowledge-intensive NLP tasks,” in Adv. Neural Inf. Process. Syst. (NeurIPS), vol. 33, pp. 9459–9474, 2020.
+[5]	A. Erdogan, et al., “PLAN-AND-ACT: Structured planning for autonomous LLM agents,” forthcoming, 2025.
+[6]	Z. Jiang, et al., “Self-Refine: Iterative refinement with self-feedback,” arXiv preprint arXiv:2303.17651, 2023.
+[7]	J. Qian, et al., “AutoGen: Enabling next-gen LLM applications via multi-agent conversation,” Microsoft Research, 2023. [Online]. Available: https://​aka.​ms/​autogen
+[8]	J. Harrison, et al., “CrewAI: Collaborative multi-agent framework for LLM applications,” GitHub repository, 2024. [Online]. Available: https://​github.​com/​joel-crew/​crewai
+[9]	LangChain Authors, “LangChain framework documentation,” 2023–2025. [Online]. Available: https://​docs.​langchain.​com
+[10]	OpenAI, “Function calling and tool use API docs,” 2023–2025. [Online]. Available: https://​platform.​openai.​com/​docs

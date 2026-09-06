@@ -1,0 +1,12 @@
+- Agentic document extraction
+1) Vision first - Treats documents as visual objects where meaning is encoded in layout, structure 
+and spatial relationships
+
+2) Data centric : Train on the highest quality, curated data.Right data id important as right 
+model architecture
+
+3) Agentic: Delivery systems that plan, decide, act and verify outputs until the response
+meets quality thresholds.
+
+- DocVQA is the benchmark used
+

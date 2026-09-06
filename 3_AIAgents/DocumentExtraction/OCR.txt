@@ -1,0 +1,49 @@
+Tesseract represents the traditional computer vision era. It uses hand-engineered features and procedural rules. 
+PaddleOCR represents the modern deep learning era. It uses neural networks in two steps:
+
+Text Detection: Locate all text regions in the image (DBNet)
+Text Recognition: Decode the text content from each region (SVTR (current), SRN (former), CRNN(earliest))
+
+
+Pros:
+- Accurate on complex, irregular or curved text.
+- More effecient with GPUs
+
+Tessseract OCR used for simpler usecases like books, PDFs, archives, regular layout.
+
+
+
+OCR limitations:
+----------------
+- Columns of text become combined or interleaved
+- Tables of numbers flatten into disconnected values
+- Logical reading order among sections is ignored.
+OCR discards spatial and structural info leading to hallucination or errors in LLMs.
+Layout detection helps recover this missing info from documents.
+
+
+Document Layout Analysis (Layout detection):
+---------------------------------------------
+- Identifying and labelling regions in document images: text blocks, tables, 
+images and their relationships.
+
+Geometric layout (where?):
+- Identifies region of interest: para, figures, tables and their spatial relationships on the page.
+
+Logical layout (what?):
+- Assign region types: title, footnote, caption, body text, determining the purpose of each region.
+
+Pros:
+- Preserves meaning.
+- Accurate extraction
+- Effeciency and precision by segmenting content and post processing overhead.
+- Avoid Text soup - without layout analysis, OCR cretes jumbled output ignoring columns, sections and 
+natural reading flow.
+
+Determining Reading order:
+---------------------------
+- Layout detection: Provides contextual glue that prevnts document meaning from being lost.
+- Reading order detection: Determinign the correct sequence for text blocks is crucial for complex layouts
+where spatial arrangements conveys semantic relationships.
+
+

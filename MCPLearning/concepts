@@ -7,6 +7,8 @@ https://modelcontextprotocol.io/docs/getting-started/intro
 - Interface between AI models and external tools
 - Reduces glue code. Scales across multiple models and systems.
 - Gives a boundary on what AI can do.
+- a new open standard transforming how LLM-powered agents interact with external systems. 
+
 
 MCP pros:
 - Dynamic tool discovery

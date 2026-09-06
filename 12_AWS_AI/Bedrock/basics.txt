@@ -1,0 +1,32 @@
+Foundation models: Giant, pre-trained transformer models.Can be fine tuned for specific tasks.
+Ex: GPT-n, Claude
+
+- Amazon titan is basically for embedding, transforming text to embeddings
+
+- Guardrails:  are a way to filter out objectionable inputs and outputs.
+
+Bedrock:
+-------
+- Abstraction around these foundation models. Its an api for genai foundation models.
+- Invoke chat , text or image models.
+- Pre-built, your own fine-tuned models
+- Third party will bill you via AWS through their own pricing
+- Support for RAG
+- Support for LLM agents
+- Serverless
+- Can integrate with sagemaker canvas
+
+Infra:
+- API endpoints to : manage, deploy and train models
+- Bedrock runtime: Perform inference ( Execute prompts, generate embeddings) against these models.
+[Converse, ConverseStream, InvokeModel, InvokeModelWithResponseStream]
+- Bedrock-agent: Manage, Deploy, train LLM agents and KBs
+- Bedrock-agent-runtime: Perform inferences against agents and KBs
+[InvokeAgent, Retrieve, RetrieveAndGenerate]
+
+Permission:
+- Use with IAM user 
+- Have bedrock permission - AmazonBedrockFullAccess, AmazonBedrockReadOnly
+
+Pricing:
+- aws.amazon.com/bedrock/pricing

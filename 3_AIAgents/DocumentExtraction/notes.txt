@@ -1,0 +1,58 @@
+- Document processing: Required of you need to convert unstructured document to 
+structured, machine readable data, we need document processing.Structued data can be searched, analysed 
+and integrated into automated systems.
+
+- parsing and extracting are important steps in document processing
+
+- parsing to markdown/html
+ 
+ 1) Convert visual document like pdf to machine readable format.
+ 2) Optical character reacognition (OCR) is used  to convert image to text.
+ 3) Directly includes metadata such as coordinates of bounding boxes.
+
+ Image -> parsing  -> text
+
+- Extracting json
+1) Pull specific fields from parsed content.
+
+
+- Markdown(md) is a light weight formatting language 
+# for headings, - for list and | for tables
+It preserved document hierarchy like headings, subsections.
+It is the output format of parsing step.
+md required less token.Both human-readable and LLM friendly.
+
+- Json -> output format of extraction step as it captures fields specified through schema.
+
+OCR (optical character recognition):
+-------------------------------------
+- Converts pdf or image to text
+- Exctraction needs text as input.
+- Without OCR, parsing tools cannot see text in scanned images.
+
+Two steps of OCR:
+1) Image processing: Preprocessing corrects tilted scans through deskewing and removes
+digital noise with despeckling algos.
+Deskewing -> properly aligning either horizontally or vertically incase they are tilted.
+Despeckling -> Operation removes digital noise like random dots or blurr from image.
+It makes the image cleaner, enhancing the clarity of textual content.
+
+2) Text recognition: Advanced pattern matching compares image shapes against a comprehensive
+library of known characters.
+
+- OCR is good at extracitng text from clean, well formatted documents.
+- OCR parses text but does not understand the info and this requires and intelligent post processing.
+
+OCR fails for:
+- Poor image quality
+- Complex layouts
+- Non standard texts that are handwritten
+- Postprocessing is important for structure, recognition and relationships in the text.
+
+
+- AI agents add a cognitive layer on top of OCR.
+
+
+
+
+

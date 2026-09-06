@@ -1,0 +1,1 @@
+If using goole, add dependency -> langhain-google-genai

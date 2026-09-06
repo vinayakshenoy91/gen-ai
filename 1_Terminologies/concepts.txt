@@ -1,1 +1,4 @@
+- Generate new data from learned patterns
+- Trained on large datasets to understand relationships between inputs and outputs
+- Context, Structure, Refinement
     

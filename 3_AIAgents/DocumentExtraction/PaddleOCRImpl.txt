@@ -1,0 +1,83 @@
+
+Initialize PaddleOCR with English language support. This loads two models:
+
+_DET: Text detection model (locates text regions)
+_REC: Text recognition model (reads characters)
+-------
+
+import os
+from pathlib import Path
+from typing import List, Dict, Any
+
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import colormaps
+
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain.agents import create_tool_calling_agent
+from langchain.agents import AgentExecutor
+
+from langchain_openai import ChatOpenAI
+
+from PIL import Image
+import cv2
+
+os.environ['DISABLE_MODEL_SOURCE_CHECK'] = 'True'
+from paddleocr import PaddleOCR
+
+from dotenv import load_dotenv
+
+# Load environment variables from .env
+_ = load_dotenv(override=True)
+
+# Initialize English OCR model
+ocr = PaddleOCR(lang='en')
+
+#Inject image
+image_path = 'receipt.jpg'
+img = Image.open(image_path)
+display(img)
+
+# Run OCR
+result = ocr.predict(image_path)
+
+
+#Print the OCR results containing:
+
+[Recognized text strings
+Confidence scores for each line
+Bounding box coordinates (localization information)]
+
+page = result[0]
+texts = page['rec_texts'] # recognized text strings
+scores = page['rec_scores'] # confidence scores for each text line
+boxes  = page['rec_polys'] #  bounding box coordinates
+
+for text, score, box in zip(texts, scores, boxes):
+    # box is a numpy array like [[x1, y1], [x2, y2], [x3, y3], [x4, y4]]
+    coords = box.astype(int).tolist()  # convert to normal list of ints
+    print(f"{text:25} | {score:.3f} | {coords}")
+
+
+#Note: 
+PaddleOCR preprocesses images automatically—correcting rotation, deskewing, and removing noise.
+
+img = page['doc_preprocessor_res']['output_img']
+
+#The visualization below shows the preprocessed image with bounding boxes and recognized text. 
+Compare to the original: the background is cleaner and the image is slightly rotated for better alignment.
+
+img_plot = img.copy()
+
+for text, box in zip(texts, boxes):
+    pts = np.array(box, dtype=int)
+    cv2.polylines(img_plot, [pts], True, (0, 255, 0), 2)
+    x, y = pts[0]
+    cv2.putText(img_plot, text, (x, y - 5), 
+                cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 0, 0), 2)
+
+plt.figure(figsize=(8, 10))
+plt.imshow(cv2.cvtColor(img_plot, cv2.COLOR_BGR2RGB))
+plt.axis("off")
+plt.title("Aligned Bounding Boxes (Processed Image)")
+plt.show()

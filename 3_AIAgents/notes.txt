@@ -1,0 +1,54 @@
+- AI agents are goal driven rather than static rule driven. Meaning, given the actual goal of what 
+we need to achieve, given a business process, 
+the AI Agents could perceive, plan, reason, and act.
+
+- This iterative self-learning loop of Perceive ➤ Plan ➤ Reason ➤ Act ➤ Reflect is made all possible 
+with the help of language understanding models that can not only understand language but also reason, 
+which is one of the critical aspects of the human brain—to reason, act, and reflect. “Reflection” is 
+often the agent reviewing its own output against the original goal before finalizing an action. 
+This continuous loop is what makes the AI agent autonomous.
+
+- AI agents should be perceived as a progression toward autonomous rather than defining 
+it as always autonomous.
+
+Deterministic process: 
+----------------------
+- Rule-based logic and deterministic outcomes deliver efficiency, reliability, and control.
+- A deterministic process may not be flexible or “intelligent,” but it’s consistent, dependable, 
+and manageable.
+
+- we’re now building ones that can chase goals on their own and adjust as the world around them changes. 
+
+Embracing Uncertainty As a Design Principle
+---------------------------------------------
+- With autonomy, it’s the other way around—uncertainty is expected. These systems have to keep working 
+even when the picture is incomplete or when surprises come up.That kind of behavior requires 
+goal awareness, reasoning, and adaptability.
+
+- Autonomous systems, on the other hand, are dynamic, and they watch what’s happening, measure their progress, 
+and adjust their actions along the way. 
+
+- engineers define boundaries, guardrails, and incentives that guide the system’s behavior.
+
+- The role of the engineer shifts from hardcoding every instruction 
+to designing intent, adaptability, and safe ways for the system
+
+
+Ultimately, the mindset of autonomy prioritizes:
+-------------------------------------------------
+- Robustness over rigidity
+- Situational awareness over predefined control
+- Goal-directed agency over task repetition
+
+
+The Agentic Leap: 
+
+Reasoning – Drawing inferences from facts, chaining logic across multiple steps, 
+and making decisions under uncertainty
+
+Memory – Retaining relevant facts, previous context, or user preferences 
+across interactions
+
+Planning – Breaking goals into actionable steps, sequencing actions, and 
+adapting when conditions change
+

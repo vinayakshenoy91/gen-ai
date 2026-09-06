@@ -1,0 +1,10 @@
+- Supply chain mgmt makes sure products are available and delivered on time.
+- Coordination of all activities involved in producing and delivering a product.
+
+- Goals of SCM: Reduce cost, meet customer demand, timely deliveries.
+
+Elements of SCM are:
+
+1) Demand forecasting: Predict quantity, timing and demand for a product
+2) Inventory mgmt: Have enough stock without overstocking
+[Reorder points, Safety stock and Economic order quantity]

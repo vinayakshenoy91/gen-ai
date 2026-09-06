@@ -1,0 +1,31 @@
+
+At the low-control, low-complexity end, you should design with RPA, scripts, or deterministic workflows—simple, 
+reliable, rule-based systems.
+
+As complexity grows, don’t jump straight to autonomy; instead, build semi-autonomous copilots that assist but 
+keep a human in the loop.
+
+When tasks need structured tool use and bounded decision-making, move toward tool-augmented agents, always 
+layering in safety checks.
+
+For multi-faceted, high-complexity tasks, engineers should think in terms of multi-agent orchestration—a 
+system of specialized agents coordinated by policies.
+
+Only in narrow, well-understood domains with strong guardrails is it wise to move 
+to fully autonomous systems.
+
+We’re designing intent, defining boundaries, and creating environments where AI can act safely. 
+
+What outcome do I want, and how much autonomy is appropriate to achieve it
+
+Some of the most commonly used tools in LangChain:
+------------------------------------------------
+Search API (TavilySearchResults, SerpAPIWrapper, etc.) that lets agents pull in real-time or external information beyond their training cutoff.
+
+Vector Database Retriever (VectorStoreRetrieverTool—Pinecone, Weaviate, FAISS, Chroma, etc.) that enables semantic search and retrieval from custom document stores.
+
+SQL Database Query Tool (QuerySQLDatabaseTool, QueryCheckerTool, SQLDatabaseToolkit) that allows natural language questions to be converted into SQL queries against structured data.
+
+Code Execution/Python Functions (PythonREPLTool) that run snippets of code to compute results, process data, or simulate scenarios.
+
+File Loaders (UnstructuredFileLoader, PyPDFLoader, CSVLoader, Docx2txtLoader, NotionDBLoader, GoogleDriveLoader) that let the agent ingest and process documents in various formats.

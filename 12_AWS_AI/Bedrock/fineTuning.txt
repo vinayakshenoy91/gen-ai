@@ -1,0 +1,21 @@
+- Adapt a LLM to specific usecase.
+- Additional training using your own data. This is baked into the model.
+Token saving/Eliminate big conversations(prompt engg / prompt design)
+
+How to train?
+- For text based models provide prompts and completions and put this in S3
+- Tell bedrock to make the custom model from this foundation model using the data that is given
+- Prompts and link to images in S3 for image model training
+- Use VPC with private link for sensitive training data.
+- Continued pre-training - Like finetuning, but unlabelled data. Just feed it with text 
+to familiarize the model with your own business documents.
+Include extra data into the model so that you do not have to include it in prompt.
+
+Approach used for fine tuning: LORA (Low rank adaption)
+-------------------------------------------------------
+- We dont update the entire model, just slap some "low rank matrices" to the attention weights
+and train those."Low rank" refers to the complexity of the underlying matrices in the model.
+
+- At inference, these fine-tuned weights get added into the base model.
+
+- Very effecient for storage, training and inference.

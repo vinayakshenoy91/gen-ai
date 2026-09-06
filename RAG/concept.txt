@@ -1,0 +1,34 @@
+Rag involves six steps across 3 phases:
+
+A) Pre-processing:
+------------------
+1) Parse (chunks) - ADE major job
+2) Embed (Vectors)
+3) Store ( Vector DB ) - Chroma DB for local db
+
+
+B) Query:
+---------
+1) Query and rank
+2) Retrieve - Relevent chunks + metadata
+
+C) Generate:
+-------------
+- Generate augmented response
+
+
+RAG - Process:
+--------
+1) Embed: Convert qn to a Vector
+2) Search: Find tok-k nearest Vectors
+3) Score: Rank fetched vectors by similarity score
+4) Filter: Remove vectors beneath a minimum similarity threshold
+5) Visualize: Show chunks as cropped images from pdf.
+
+
+- Retrieved chunk from step 4 is sent to prompt as context
+
+
+
+
+

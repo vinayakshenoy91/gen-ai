@@ -1,0 +1,9 @@
+But when we talk about intelligent or AI agents, we generally mean software that perceives its environment, 
+decides what to do, 
+and takes action to achieve a goal, using the resources provided by an LLM.
+
+- an agent perceives its environment, decides what to do, and takes action to achieve a goal.
+
+- Use SDK to build agent. Connect them to APIs, DB, knowledge stores using MCP
+
+- Autonomy and persistence shift a system from a reactive assistant to an active agent. 
